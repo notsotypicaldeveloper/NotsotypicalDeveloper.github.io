@@ -46,6 +46,9 @@ const NavItems = styled.ul`
     gap: 32px;
     padding: 0 6px;
     list-style: none;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
 `;
 
 const NavLink = styled.a`
@@ -55,7 +58,7 @@ const NavLink = styled.a`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     &:hover{
-    color: ${({theme}) => theme.text_primary}
+      color: ${({theme}) => theme.text_primary}
     }
 `;
 
@@ -69,7 +72,8 @@ const ButtonContainer = styled.div`
     @media screen and (max-width: 768px) {
     display: none;
 }
-`
+`;
+
 
 
 const GithubButton = styled.a`
@@ -88,9 +92,8 @@ const GithubButton = styled.a`
     &: hover {
         background: ${({theme}) => theme.primary};
         color: ${({theme}) => theme.primary};
-
     }
-`
+`;
 const MobileIcon = styled.div`
     height: 100%,
     display: flex,
@@ -102,57 +105,50 @@ const MobileIcon = styled.div`
     }
 `;
 
-
-const MobileMenu = styled.ul`
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    gap: 16px;
-    padding: 0 6px;
-    list-style: none;
-    width: 100%,
-    padding: 12px 40px 24px 40px;
-    background: ${({theme}) => theme.card_light+ 99};
-    position: absolute;
-    top: 80px;
-    right: 0;
-    transition: all 0.6s ease-in-out; 
-    transform: ${({ isOpen }) => isOpen ? "translateY(0)" : "translateY(-100%)"};
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-    z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
+const MobileMenu = styled.ul<{ isOpen: boolean }>`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+  padding: 0 6px;
+  list-style: none;
+  width: 100%;
+  padding: 12px 40px 24px 40px;
+  background: ${({ theme }) => theme.card_light + 99};
+  position: absolute;
+  top: 80px;
+  right: 0;
+  transition: all 0.6s ease-in-out;
+  transform: ${({ isOpen }) => isOpen ? "translateY(0)" : "translateY(-100%)"};
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+  z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
 `;
 
+
 const Navbar = () => {
-    
-    const [isOpen, setIsOpen] = useState(false);
-    const theme = useTheme();
+  let [isOpen, setIsOpen] = useState(false);
+  const theme = useTheme();
+  return (
+    <Nav>
+      <NavbarContainer>
+        <NavLogo to="/">GeeksForGeeks</NavLogo>
 
-    return (
-        <>
-            <Nav>
-            <NavbarContainer>
+        <MobileIcon onClick={() => setIsOpen(!isOpen)}>
+          <MenuRounded style={{ color: "inherit" }} />
+        </MobileIcon>
 
-                <NavLogo to="/">
-                    <a style={{color: "white"}}>MyLogo</a>
-                </NavLogo>
+        <NavItems>
+          <NavLink href="#About">About</NavLink>
+          <NavLink href="#Skills">Skills</NavLink>
+          <NavLink href="#Experience">Experience</NavLink>
+          <NavLink href="#Projects">Projects</NavLink>
+          <NavLink href="#Education">Education</NavLink>
+        </NavItems>
 
-                <MobileIcon onClick={()=>setIsOpen(!isOpen)}>
-                    <MenuRounded style={{color: "inherit"}}/>
-                </MobileIcon>
-
-                <NavItems>
-                    <NavLink href="#About">About</NavLink>
-                    <NavLink href="#Skills">Skills</NavLink>
-                    <NavLink href="#Experience">Experience</NavLink>
-                    <NavLink href="#Projects">Projects</NavLink>
-                    <NavLink href="#Education">Education</NavLink>
-                </NavItems>
-                
-                {isOpen && (
+        {isOpen && (
           <MobileMenu isOpen={isOpen}>
             <NavLink onClick={() => setIsOpen(!isOpen)} href="#About">
               About
@@ -182,11 +178,15 @@ const Navbar = () => {
           </MobileMenu>
         )}
 
+        <ButtonContainer>
+          <GithubButton href={Bio.github} target="_Blank">
+            Github Profile
+          </GithubButton>
+        </ButtonContainer>
+      </NavbarContainer>
+    </Nav>
+  );
+};
 
-            </NavbarContainer>
-            </Nav>
-        </>
-    )
-}
 
 export default Navbar;
