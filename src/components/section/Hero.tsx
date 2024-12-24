@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 import { Bio } from '../../data/constants';
 import Typewriter from "typewriter-effect";
-import HeroImg from "../../images/Hero.jpg"
-import HeroBgAnimation from "../HeroBgAnimation"
+import HeroImg from "../../images/Hero.jpg";
+import HeroBgAnimation from "../HeroBgAnimation";
+import {Tilt} from "react-tilt";
+import {motion} from "framer-motion";
+import { headContainerAnimation, headContentAnimation, headTextAnimation,} from "../../util/motion";
+
+
 const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -208,16 +213,20 @@ export const Hero = () => {
   return (
     <div id="about">
     <HeroContainer>
+        
         <HeroBg>
             <HeroBgAnimation />
         </HeroBg>
+
+        <motion.div {...headContainerAnimation}/>
         <HeroInnerContainer>
             <HeroLeftContainer>
+                <motion.div {...headTextAnimation}>
                 <Title>
                     Hi, I am <br/> {Bio.name}
                 </Title>
                 <TextLoop>
-                    I am a 
+                    {/* I am a  */}
                     <Span>
                         <Typewriter options={{
                             strings: Bio.roles,
@@ -226,12 +235,17 @@ export const Hero = () => {
                         }}/>
                     </Span>
                 </TextLoop>
-                <SubTitle>{Bio.description}</SubTitle>
+                </motion.div>
 
+                <motion.div {...headContentAnimation}>
+                    <SubTitle>{Bio.description}</SubTitle>
+                </motion.div>
+                
             </HeroLeftContainer>
             <HeroRightContainer>
+                        <Tilt>
                         <Img src={HeroImg} alt="Notsotypical Developer Img" />
-
+                        </Tilt>
             </HeroRightContainer>
         </HeroInnerContainer>
     </HeroContainer>
