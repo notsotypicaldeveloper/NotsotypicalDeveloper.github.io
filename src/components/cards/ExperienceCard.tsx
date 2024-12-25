@@ -82,7 +82,7 @@ const ItemWrapper = styled.div`
   gap: 8px;
 `;
 
-const ExperienceCard = (experience: any) => {
+const ExperienceCard = ({ experience }: {experience: any}) => {
   return (
     <VerticalTimelineElement
       icon={
@@ -126,7 +126,7 @@ const ExperienceCard = (experience: any) => {
             <Skills>
               <b>Skills</b>
               <ItemWrapper>
-                {experience?.skills?.map((skill:any) => (
+                {experience?.skills?.map((skill:any, index:any) => (
                   <Skill>• {skill}</Skill>
                 ))}
               </ItemWrapper>

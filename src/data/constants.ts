@@ -135,7 +135,7 @@ export const skills =   [
 
     export const experiences = [
       {
-        id: 1,
+        id: 0,
         img: "https://miro.medium.com/v2/resize:fill:88:88/1*g0aw1bqKCxNUGim6s03xxw.jpeg",
         role: "Backend Software Engineer",
         company: "HashStack Finance",
@@ -151,12 +151,12 @@ export const skills =   [
         doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
       },
       {
-        id: 2,
+        id: 1,
         img: "https://static.ambitionbox.com/alpha/company/photos/logos/panaesha-capital-pte-ltd.jpg",
         role: "Fullstack Engineer",
         company: "PCEX Member(venture from Panaesha Capital Pvt Ltd)",
         date: "Oct 2019 - March 2024",
-        desc: "Reduce customer onboarding time from 3-5 days to less than 15 minutes by implementing Instant Approval of KYC",
+        desc: "Reduce customer onboarding time from 3-5 days to less than 15 minutes by implementing Instant Approval of KYC.Develop Multiple core modules like Assured Interest Scheme, Terminal Manager, Order Manager, Referral Bonus, Register, 2FA, Login using JWT, and Bcrypt.Integrate various payment gateways like Stripe and Ngenius for their sub-projects and handle AWS And S3 Bucket Configurations.Create a backend notification service for admin and telegram bots, increasing client interaction and query resolutions by 14%.",
         skills: [
           "Docker",
           "AWS",
@@ -172,7 +172,7 @@ export const skills =   [
         doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1696514649120.jpeg?alt=media&token=e7f6757b-edfa-4138-a692-d6709eeef3e2",
       },
       {
-        id: 3,
+        id: 2,
         img: "https://media.licdn.com/dms/image/v2/D560BAQGJTJzA4iTTMQ/company-logo_200_200/company-logo_200_200/0/1719924913731/publicissapient_logo?e=1743033600&v=beta&t=1uvrHskfppDaE600MgEl0C9Xrag-eYr2m_wtfokRImw",
         role: "Intern in Performance Share And Service Team(PSST)",
         company: "Publicis Sapient",
@@ -184,6 +184,4 @@ export const skills =   [
           "Google Developer Tools"
         ],
       },
-    
-    
     ];
