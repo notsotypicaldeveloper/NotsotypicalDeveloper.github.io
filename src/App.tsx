@@ -6,6 +6,8 @@ import {Hero} from "./components/section/Hero";
 import Skills from "./components/section/Skills";
 import Experience from "./components/section/Experience";
 import StarCanvas from "./components/canvas/Stars";
+import Projects from "./components/section/Project";
+import Contact from "./components/section/Contact";
 
 const Body = styled.div`
   background-color: ${({theme})=> theme.bg};
@@ -47,11 +49,11 @@ function App() {
               <Skills />
               <Experience />
             </Wrapper>
-            {/* <Projects />
+             <Projects />
             <Wrapper>
               <Contact />
             </Wrapper>
-            <Footer /> */}
+            {/* <Footer /> */}
           </div>
         </Body>
         </BrowserRouter>

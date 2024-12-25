@@ -136,6 +136,18 @@ export const skills =   [
     export const experiences = [
       {
         id: 0,
+        img: "./chilling.jpg",
+        role: "Sabbatical",
+        company: "Take a break",
+        date: "1Sept,2024- 15Dec,2024",
+        desc: "Spending time with family, Skill Development and taking a fresh start!",
+        // skills: [
+        // ],
+        doc: "",
+      },
+
+      {
+        id: 1,
         img: "https://miro.medium.com/v2/resize:fill:88:88/1*g0aw1bqKCxNUGim6s03xxw.jpeg",
         role: "Backend Software Engineer",
         company: "HashStack Finance",
@@ -148,10 +160,11 @@ export const skills =   [
           "JavaScript",
           "Redis",
         ],
-        doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
+        doc: "",
       },
+
       {
-        id: 1,
+        id: 2,
         img: "https://static.ambitionbox.com/alpha/company/photos/logos/panaesha-capital-pte-ltd.jpg",
         role: "Fullstack Engineer",
         company: "PCEX Member(venture from Panaesha Capital Pvt Ltd)",
@@ -169,10 +182,10 @@ export const skills =   [
           "JWT",
           "Payment Gateways"
         ],
-        doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1696514649120.jpeg?alt=media&token=e7f6757b-edfa-4138-a692-d6709eeef3e2",
+        doc: "",
       },
       {
-        id: 2,
+        id: 3,
         img: "https://media.licdn.com/dms/image/v2/D560BAQGJTJzA4iTTMQ/company-logo_200_200/company-logo_200_200/0/1719924913731/publicissapient_logo?e=1743033600&v=beta&t=1uvrHskfppDaE600MgEl0C9Xrag-eYr2m_wtfokRImw",
         role: "Intern in Performance Share And Service Team(PSST)",
         company: "Publicis Sapient",
@@ -185,3 +198,101 @@ export const skills =   [
         ],
       },
     ];
+
+
+    export const projects = [
+      {
+        id: 5,
+        title: "LeadsOnBlink",
+        date: "Nov 2024",
+        description:
+          "Created a website where users can sign in, search for leads related to their tasks, and pay to access their contact details.",
+        image:
+          "./leadsOnBlink.png",
+        tags: [
+          "React Js",
+          "PostgressSQL",
+          "Node Js",
+          "Express Js",
+          "Redux",
+          "React Flow",
+        ],
+        category: "web app",
+        github: "https://github.com/notsotypicaldeveloper/LeadsOnBlink",
+        webapp: "https://leads-on-blink.vercel.app/",
+      },
+      {
+        id: 4,
+        title: "Pro Level Backend",
+        date: "Dec 2024",
+        description:"This is my personal fav project, which have all Node.js the best practices as well have authentication, image uploads and many more.",
+        image:
+          "https://miro.medium.com/v2/resize:fit:720/format:webp/1*f40mVY_hJvyhvm47bd0qyg.png",
+        tags: [
+          "Docker",
+          "AWS",
+          "Eslint",
+          "Husky",
+          "CI/CD",
+          "React Js",
+          "MongoDb",
+          "Node Js",
+          "Express Js",
+          "Redux",
+        ],
+        category: "backend",
+        github: "https://github.com/notsotypicaldeveloper/prod_level_backend",
+        webapp: "",
+      },
+      {
+        id: 3,
+        title: "Mario Fruit Ninja",
+        date: "Sept 2024",
+        description:
+          "Develop mario game, where user have to collect orange and save himself/herself from piranha-plant",
+        image:
+          "./marioFruitNinja.png",
+        tags: ["HTML", "CSS", "JAVASCRIPT"],
+        category: "games",
+        webapp: "https://mario-fruit-ninja.vercel.app/",
+        member: [
+          {
+            name: "Notsotypical Developer",
+            img: "https://avatars.githubusercontent.com/u/134038602?s=400&u=02d3e83836e6d5dafb7004975ee44193f4ffa211&v=4",
+            // linkedin: "https://www.linkedin.com/in/notsotypicaldeveloper/",
+            github: "https://github.com/notsotypicaldeveloper",
+          },
+        ],
+      },
+      {
+        id: 2,
+        title: "Parallex Effect",
+        date: "Nov 2024",
+        description:"Create three layer parallex effect.",
+        image:
+          "./parallex.png",
+        tags: [
+         "HTML", "CSS"
+        ],
+        category: "web app",
+        github: "https://github.com/notsotypicaldeveloper/parallexEffect",
+        webapp: "https://notsotypicaldeveloper.github.io/parallexEffect/",
+      },
+      {
+        id: 1,
+        title: "Cat Drag and Drop",
+        date: "Sept 2024",
+        description:"Create a game which allow user to move cat freely between different cards. It become base of my upcoming tile game",
+        image:
+          "./parallex.png",
+        tags: [
+         "HTML", "CSS"
+        ],
+        category: "web app",
+        github: "https://github.com/notsotypicaldeveloper/parallexEffect",
+        webapp: "https://notsotypicaldeveloper.github.io/parallexEffect/",
+      },
+     
+     
+   
+    ]
