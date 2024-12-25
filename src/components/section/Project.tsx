@@ -116,7 +116,7 @@ const Projects = () => {
             active={toggle === "web app"}
             onClick={() => setToggle("web app")}
           >
-            WEB APP"S
+            WEB APP's
           </ToggleButton>
           <Divider />
           <ToggleButton

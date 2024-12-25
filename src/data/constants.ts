@@ -202,7 +202,7 @@ export const skills =   [
 
     export const projects = [
       {
-        id: 5,
+        id: 4,
         title: "LeadsOnBlink",
         date: "Nov 2024",
         description:
@@ -222,10 +222,10 @@ export const skills =   [
         webapp: "https://leads-on-blink.vercel.app/",
       },
       {
-        id: 4,
+        id: 3,
         title: "Pro Level Backend",
         date: "Dec 2024",
-        description:"This is my personal fav project, which have all Node.js the best practices as well have authentication, image uploads and many more.",
+        description:"This is my personal fav project, which have all Node.js best practices as well have authentication, image uploads and many more.",
         image:
           "https://miro.medium.com/v2/resize:fit:720/format:webp/1*f40mVY_hJvyhvm47bd0qyg.png",
         tags: [
@@ -245,7 +245,7 @@ export const skills =   [
         webapp: "",
       },
       {
-        id: 3,
+        id: 2,
         title: "Mario Fruit Ninja",
         date: "Sept 2024",
         description:
@@ -254,21 +254,21 @@ export const skills =   [
           "./marioFruitNinja.png",
         tags: ["HTML", "CSS", "JAVASCRIPT"],
         category: "games",
+        github: "https://github.com/notsotypicaldeveloper/MarioFruitNinja",
         webapp: "https://mario-fruit-ninja.vercel.app/",
         member: [
           {
             name: "Notsotypical Developer",
             img: "https://avatars.githubusercontent.com/u/134038602?s=400&u=02d3e83836e6d5dafb7004975ee44193f4ffa211&v=4",
-            // linkedin: "https://www.linkedin.com/in/notsotypicaldeveloper/",
             github: "https://github.com/notsotypicaldeveloper",
           },
         ],
       },
       {
-        id: 2,
+        id: 1,
         title: "Parallex Effect",
         date: "Nov 2024",
-        description:"Create three layer parallex effect.",
+        description:"Create four layer parallex effect.",
         image:
           "./parallex.png",
         tags: [
@@ -279,18 +279,18 @@ export const skills =   [
         webapp: "https://notsotypicaldeveloper.github.io/parallexEffect/",
       },
       {
-        id: 1,
-        title: "Cat Drag and Drop",
+        id: 0,
+        title: "Drag and Drop Cat",
         date: "Sept 2024",
         description:"Create a game which allow user to move cat freely between different cards. It become base of my upcoming tile game",
         image:
-          "./parallex.png",
+          "./cat.png",
         tags: [
-         "HTML", "CSS"
+         "React.js", "CSS", "msw", "eslnt"
         ],
         category: "web app",
-        github: "https://github.com/notsotypicaldeveloper/parallexEffect",
-        webapp: "https://notsotypicaldeveloper.github.io/parallexEffect/",
+        github: "https://github.com/notsotypicaldeveloper/cat-project",
+        webapp: "https://cat-project-theta.vercel.app/",
       },
      
      
