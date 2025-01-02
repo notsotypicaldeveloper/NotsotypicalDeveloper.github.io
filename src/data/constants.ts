@@ -230,10 +230,11 @@ export const skills =   [
         image:
           "https://miro.medium.com/v2/resize:fit:720/format:webp/1*f40mVY_hJvyhvm47bd0qyg.png",
         tags: [
+          "GraphQL",
+          "Socket.io",
           "Docker",
           "AWS",
           "Eslint",
-          "Husky",
           "CI/CD",
           "React Js",
           "MongoDb",
