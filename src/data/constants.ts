@@ -223,9 +223,9 @@ export const skills =   [
       },
       {
         id: 3,
-        title: "Pro Level Backend",
+        title: "Pro Level Backend with GraphQL and Socket.io",
         date: "Dec 2024",
-        description:"This is my personal fav project, which have all Node.js best practices as well have authentication, image uploads and many more.",
+        description:"This is my personal fav project, which have all Node.js best practices as well have authentication with GraphQL and many more.",
         image:
           "https://miro.medium.com/v2/resize:fit:720/format:webp/1*f40mVY_hJvyhvm47bd0qyg.png",
         tags: [
@@ -241,7 +241,7 @@ export const skills =   [
           "Redux",
         ],
         category: "backend",
-        github: "https://github.com/notsotypicaldeveloper/prod_level_backend",
+        github: "https://github.com/notsotypicaldeveloper/GraphQL_APIs_with_Sockets",
         webapp: "",
       },
       {
