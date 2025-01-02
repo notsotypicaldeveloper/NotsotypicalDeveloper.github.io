@@ -201,8 +201,9 @@ export const skills =   [
 
 
     export const projects = [
+     
       {
-        id: 4,
+        id: 6,
         title: "LeadsOnBlink",
         date: "Nov 2024",
         description:
@@ -222,10 +223,10 @@ export const skills =   [
         webapp: "https://leads-on-blink.vercel.app/",
       },
       {
-        id: 3,
-        title: "Pro Level Backend",
+        id: 5,
+        title: "GraphQL and Socket.io",
         date: "Dec 2024",
-        description:"This is my personal fav project, which have all Node.js best practices as well have authentication, image uploads and many more.",
+        description:"This is my personal fav project, which have all Node.js best practices as well have authentication with GraphQL and many more.",
         image:
           "https://miro.medium.com/v2/resize:fit:720/format:webp/1*f40mVY_hJvyhvm47bd0qyg.png",
         tags: [
@@ -241,11 +242,11 @@ export const skills =   [
           "Redux",
         ],
         category: "backend",
-        github: "https://github.com/notsotypicaldeveloper/prod_level_backend",
+        github: "https://github.com/notsotypicaldeveloper/GraphQL_APIs_with_Sockets",
         webapp: "",
       },
       {
-        id: 2,
+        id: 4,
         title: "Mario Fruit Ninja",
         date: "Sept 2024",
         description:
@@ -265,7 +266,7 @@ export const skills =   [
         ],
       },
       {
-        id: 1,
+        id: 3,
         title: "Parallex Effect",
         date: "Nov 2024",
         description:"Create four layer parallex effect.",
@@ -279,7 +280,7 @@ export const skills =   [
         webapp: "https://notsotypicaldeveloper.github.io/parallexEffect/",
       },
       {
-        id: 0,
+        id: 2,
         title: "Drag and Drop Cat",
         date: "Sept 2024",
         description:"Create a game which allow user to move cat freely between different cards. It become base of my upcoming tile game",
@@ -292,7 +293,41 @@ export const skills =   [
         github: "https://github.com/notsotypicaldeveloper/cat-project",
         webapp: "https://cat-project-theta.vercel.app/",
       },
-     
+      {
+        id: 5,
+        title: "Auth, Image Upload via Multer and cloudinary",
+        date: "Dec 2024",
+        description:"This is my personal fav project, which have all Node.js best practices as well have authentication, image uploads and many more.",
+        image:
+          "./multer.png",
+        tags: [
+          "Docker",
+          "AWS",
+          "Eslint",
+          "Husky",
+          "CI/CD",
+          "React Js",
+          "MongoDb",
+          "Node Js",
+          "Express Js",
+          "Redux",
+        ],
+        category: "backend",
+        github: "https://github.com/notsotypicaldeveloper/",
+        webapp: "",
+      },
+      { 
+        id: 0,
+        title: "Databases",
+        date: "Jan 2025",
+        description: "Create repository with all the required command, we use in MySQL",
+        image: [
+          "./database.png"
+        ],
+        tags: [ "MySQL"],
+        category: "web app",
+        github: "https://github.com/notsotypicaldeveloper/databases"
+      }
      
    
     ]
