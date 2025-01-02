@@ -179,7 +179,7 @@ export const Hero = () => {
             <HeroLeftContainer>
                 <motion.div {...headTextAnimation}>
                 <Title>
-                    Hi, I am <br/> {Bio.name}
+                    Hi, I am <br/> "{Bio.name}"
                 </Title>
                 <TextLoop>
                     {/* I am a  */}
