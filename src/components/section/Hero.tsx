@@ -179,10 +179,11 @@ export const Hero = () => {
             <HeroLeftContainer>
                 <motion.div {...headTextAnimation}>
                 <Title>
-                    Hi, I am <br/> "{Bio.name}"
+                    Hi, My nickname is: <br/> "{Bio.name}"
                 </Title>
+               
                 <TextLoop>
-                    {/* I am a  */}
+                    I am a 
                     <Span>
                         <Typewriter options={{
                             strings: Bio.roles,
