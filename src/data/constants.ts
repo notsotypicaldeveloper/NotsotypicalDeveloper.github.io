@@ -134,6 +134,17 @@ export const skills =   [
     ]
 
     export const experiences = [
+     {
+        id: -1,
+        img: "./raftlabs.jpg",
+        role: "Backend Software Engineer",
+        company: "Raftlabs",
+        date: "7Feb,2025- Present",
+        desc: "Integrate booking rms system with their system.",
+        // skills: [
+        // ],
+        doc: "",
+      },
       {
         id: 0,
         img: "./chilling.jpg",
