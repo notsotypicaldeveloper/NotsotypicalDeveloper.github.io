@@ -136,7 +136,7 @@ export const skills =   [
     export const experiences = [
      {
         id: -1,
-        img: "https://www.raftlabs.com/static/7cb6649bce8e58bb5cc06dd15af16809/16614/logo-text-black.avif",
+        img: "./raftlabs.jpeg",
         role: "Backend Software Engineer",
         company: "Raftlabs",
         date: "7Feb,2025- Present",
@@ -197,7 +197,7 @@ export const skills =   [
       },
       {
         id: 3,
-        img: "https://media.licdn.com/dms/image/v2/D560BAQGJTJzA4iTTMQ/company-logo_200_200/company-logo_200_200/0/1719924913731/publicissapient_logo?e=1743033600&v=beta&t=1uvrHskfppDaE600MgEl0C9Xrag-eYr2m_wtfokRImw",
+        img: "./sapient.png",
         role: "Intern in Performance Share And Service Team(PSST)",
         company: "Publicis Sapient",
         date: "Jan15, 2018 - 22June, 2018 ",
