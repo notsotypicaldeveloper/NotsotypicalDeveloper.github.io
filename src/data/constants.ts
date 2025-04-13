@@ -136,7 +136,7 @@ export const skills =   [
     export const experiences = [
      {
         id: -1,
-        img: "./raftlabs.jpg",
+        img: "https://www.raftlabs.com/static/7cb6649bce8e58bb5cc06dd15af16809/16614/logo-text-black.avif",
         role: "Backend Software Engineer",
         company: "Raftlabs",
         date: "7Feb,2025- Present",
