@@ -53,7 +53,7 @@ export const terminalRuns = [
 export const skills = [
   {
     title: "Languages",
-    skills: ["TypeScript", "JavaScript", "Python 3", "Java", "C++", "SQL"],
+    skills: ["TypeScript", "JavaScript", "Python 3", "Java", "C++"],
   },
   {
     title: "Backend",
@@ -88,7 +88,6 @@ export const skills = [
       "AutoGen",
       "Multi-agent systems",
       "RAG",
-      "GPT-4o",
       "YOLOv8",
       "LLM integration",
       "Claude Code",
