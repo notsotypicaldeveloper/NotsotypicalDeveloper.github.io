@@ -239,7 +239,6 @@ export const projects = [
     tags: ["React", "Node.js", "PostgreSQL", "Stripe", "Redux"],
     category: "web",
     github: "https://github.com/notsotypicaldeveloper/LeadsOnBlink",
-    webapp: "https://leads-on-blink.vercel.app/",
   },
   {
     id: 3,
