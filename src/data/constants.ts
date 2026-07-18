@@ -5,7 +5,7 @@ export const Bio = {
   company: "RaftLabs",
   tagline: "I build systems that move money, data, and people at scale.",
   description:
-    "Full-stack engineer with 6+ years shipping production systems across fintech, DeFi, and SaaS — deepest in backend, at home across the stack. Most recently: an NLP-powered trading engine that turns plain English into executable trades, a serverless booking redesign that cut latency from 20 seconds to 4, and instant KYC that collapsed 5-day onboarding into 15 minutes. I care about correctness, latency budgets, and code that's still readable at 2am during an incident.",
+    "Full-stack engineer with 5+ years shipping production systems across fintech, DeFi, and SaaS — deepest in backend, at home across the stack. Most recently: an NLP-powered trading engine that turns plain English into executable trades, a serverless booking redesign that cut latency from 20 seconds to 4, and instant KYC that collapsed 5-day onboarding into 15 minutes. I care about correctness, latency budgets, and code that's still readable at 2am during an incident.",
   github: "https://github.com/notsotypicaldeveloper",
   email: "gargmohit19la@gmail.com",
 };
